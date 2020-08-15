@@ -47,7 +47,17 @@ Project directory assumed for the project
 |	|	+-- app (Django directory)
 |	|	|	+-- app
 |	|	|	+-- manage.py
-|	|	|	+-- scripts
+|	|	+-- scripts
+|	|	|	+-- prepare_environment.sh      # Created requied files for project
+|	|	|	+-- run_app_celery_beat.sh      # Celery Beat
+|	|	|	+-- run_app_celery_dev.sh       # Celery Beat and worker only for dev environment 
+|	|	|	+-- run_app_celery_worker.sh    # Celery Worker
+|	|	|	+-- run_app_collect_static.sh   # Celery Beat
+|	|	|	+-- run_app_development.sh      # Django Server development
+|	|	|	+-- run_app_elastic_rebuild.sh  # Elastic search cache rebuild
+|	|	|	+-- run_app_migration.sh        # Run Django migrations
+|	|	|	+-- run_app_production.sh       # Django server production
+|	|	|	+-- wait-for-it.sh              # Shell that for given host and IP to be available and creates logs directory.
 +-- docker-compose.yml
 ```
 
